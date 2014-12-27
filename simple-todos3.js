@@ -1,15 +1,11 @@
-if(Meteor.isClient){
-  Session.setDefault("counter",4);
 
+if(Meteor.isClient){
   Template.here.helpers({
-    counter:function(){
-      return Session.get("counter");
-    }
+    items:[
+      {item:"match the name 'item' is vip"},
+      {item:"yup"},
+      {item:"what if not"}
+      ]    
   });
-  Template.here.events({
-    "click #what": function(){
-      var temp = Session.get("counter");
-      Session.set("counter", temp+1);
-    }
-  });
+  
 }

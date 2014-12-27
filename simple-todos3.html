@@ -1,14 +1,11 @@
-<head><title>Something</title>
-<h1>this is title</h1></head>
-
-
 <body>
-  {{> here}}
+  
+{{> here}}
+
 </body>
 
-
-
 <template name="here">
-  {{counter}}
-  <h1 id="what">other things</h1>
+  {{#each items}}
+    <li>{{item}}</li>  
+  {{/each}}
 </template>

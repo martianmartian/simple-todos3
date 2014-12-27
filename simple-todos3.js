@@ -15,7 +15,8 @@ if(Meteor.isClient){
       e.target.item.value="";
       return false;
     }
-  })
+  });
+  
 }
 
 
